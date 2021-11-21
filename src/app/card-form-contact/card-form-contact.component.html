@@ -1,0 +1,24 @@
+<mat-card class="card-form-contact">
+  <mat-card-content>
+      <mat-form-field>
+          <input matInput placeholder="Nom" #inputNom/>
+      </mat-form-field>
+
+      <mat-form-field>
+          <input matInput placeholder="Prénom" #inputPrenom/>
+      </mat-form-field>
+
+      <mat-form-field>
+          <input matInput placeholder="N° de téléphone" #inputNum/>
+      </mat-form-field>
+  </mat-card-content>
+
+  <mat-card-actions align="end">
+    <button mat-stroked-button
+    color="primary"
+    (click)="addContact(inputNom.value, inputPrenom.value, inputNum.value);
+             inputNom.value=''; inputPrenom.value=''; inputNum.value='';">Ajouter</button>
+    <button mat-stroked-button color="warn" 
+        (click)="inputNom.value=''; inputPrenom.value=''; inputNum.value='';">Annuler</button>
+  </mat-card-actions>
+</mat-card>

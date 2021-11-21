@@ -1,0 +1,25 @@
+.card-contact{
+    width: max-content;
+    padding: 30px;
+    margin: auto;
+}
+
+@media only screen and (min-width: 1280px){
+    span, mat-icon{
+        font-size: 30px !important;
+    }
+}
+span, mat-icon{
+    font-size: 15px;
+}
+button{
+    width: 40px;
+    height: 40px;
+}
+mat-card-content{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 10px;
+}

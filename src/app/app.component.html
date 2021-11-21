@@ -1,0 +1,5 @@
+<app-title></app-title>
+<app-card-form-contact (refreshDatas)="initialize();"></app-card-form-contact>
+<div *ngFor="let item of listeContact">
+    <app-card-contact [item]="item"></app-card-contact>
+</div>

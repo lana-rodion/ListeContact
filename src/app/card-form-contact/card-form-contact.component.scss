@@ -1,0 +1,31 @@
+.card-form-contact{
+    font-size: 9px;
+    padding: 20px;
+}
+.card-form-contact mat-card-content {
+    font-size: 9px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+}
+
+@media only screen and (min-width: 1280px){
+    .card-form-contact mat-card-content {
+        font-size: 20px;
+        grid-template-columns: repeat(3,1fr) !important;
+    }
+    button {
+        font-size: 14px !important;
+    }
+}
+
+.card-form-contact mat-card-actions {
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+    grid-gap: 15px;
+}
+
+button{
+    font-size: 9px;
+}

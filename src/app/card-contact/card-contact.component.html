@@ -1,0 +1,21 @@
+<mat-card class="card-contact" [@favorisAnimationState]='item.favoris'>
+        <mat-card-content>
+                <span appAnimate>Nom :</span><span>{{item.nom}}</span>
+                <span>Prénom :</span><span>{{item.prenom}}</span>
+                <span>N° :</span><span>{{item.numero}}</span>
+        </mat-card-content>
+        <mat-card-actions align="end">
+                <button mat-icon-button 
+                        [disableRipple]="true"
+                        (click)="changeFavValue();" 
+                        [ngStyle]="{'display': item.favoris ? 'inline-block' : 'none'}">
+                        <mat-icon *ngIf="item.favoris" color="accent">favorite</mat-icon>
+                </button>
+                <button mat-icon-button 
+                        [disableRipple]="true"
+                        (click)="changeFavValue();" 
+                        [ngStyle]="{'display': !item.favoris ? 'inline-block' : 'none'}">
+                        <mat-icon *ngIf="!item.favoris" color="accent">favorite_border</mat-icon>
+                </button>
+        </mat-card-actions>
+</mat-card>
