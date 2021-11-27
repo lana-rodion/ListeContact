@@ -2,7 +2,7 @@
 
 ## Source project: Jordan Paulais course | LinkedIn Learning
 
-[Link: Angular : Dynamisation des applications] (https://fr.linkedin.com/learning/angular-dynamisation-des-applications/bienvenue-dans-angular-dynamisation-des-applications)
+[Angular : Dynamisation des applications](https://fr.linkedin.com/learning/angular-dynamisation-des-applications/bienvenue-dans-angular-dynamisation-des-applications/)
 
 ## Project Contacts List Contents
 
