@@ -11,8 +11,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
     trigger('favorisAnimationState', [
       state('true', style({color:'#ff4081'})),
       state('false', style({color:'#000000'})),
-      transition('true => false', animate('300ms ease-in')),
-      transition('false => true', animate('300ms ease-in'))
+      transition('true <=> false', animate('300ms ease'))
     ])
   ]
 })
@@ -32,7 +31,7 @@ export class CardContactComponent implements OnInit {
         console.log("Favoris mis à jour.");
       },
       error => {
-        // retour à l'état précédent en cas d'erreur
+        // return to the previous state
         this.item.changeFavState();
       },
       () => {}
